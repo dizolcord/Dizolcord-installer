@@ -1,0 +1,32 @@
+{
+  "name": "dizolcord",
+  "version": "1.0.0",
+  "description": "Dizolcord Installer",
+  "author": "Dizolcord",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.dizolcord.installer",
+    "productName": "Dizolcord Installer",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    }
+  },
+  "dependencies": {
+    "node-abi": "^4.11.0",
+    "robotjs": "^0.6.0"
+  }
+}

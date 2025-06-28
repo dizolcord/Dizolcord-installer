@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dizolcord Installer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #121914;
+      color: #a2f5a2;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      user-select: none;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    button {
+      background-color: #224422;
+      border: none;
+      border-radius: 10px;
+      color: #a2f5a2;
+      font-size: 1.2rem;
+      padding: 1rem 3rem;
+      margin: 0 1rem;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+    button:hover {
+      background-color: #336633;
+    }
+    #output {
+      margin-top: 1.5rem;
+      background-color: #1f2b1f;
+      border-radius: 8px;
+      padding: 1rem;
+      height: 350px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 0.9rem;
+      box-shadow: inset 0 0 8px #0c160c;
+    }
+    .buttons {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dizolcord Installer</h1>
+  <div class="buttons">
+    <button id="installBtn" onclick="runInstall()">Install</button>
+    <button id="uninstallBtn" onclick="runUninstall()">Uninstall</button>
+  </div>
+  <br>
+  <h1>
+    Client modifications are against Discord’s Terms of Service.
+    However, Discord is pretty indifferent about them and there are no known cases of users getting banned for using client mods! So you should generally be fine as long as you don’t use any plugins that implement abusive behaviour. But no worries, all inbuilt plugins are safe to use!
+    Regardless, if your account is very important to you and it getting disabled would be a disaster for you, you should probably not use any client mods (not exclusive to Dizolcord), just to be safe
+    Additionally, make sure not to post screenshots with Dizolcord in a server where you might get banned for it.
+    Thank you. 😊
+  </h1>
+  <pre id="output"></pre>
+  <script src="renderer.js"></script>
+</body>
+</html>
